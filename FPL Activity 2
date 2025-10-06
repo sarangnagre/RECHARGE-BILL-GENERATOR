@@ -1,0 +1,130 @@
+                                               ACTIVITY 6
+
+
+RESEARCH-
+                         LINKS- https://portal.billgenerator.in/recharge-bill
+                                 A Recharge Bill Generator is a platform designed to enable users to generate receipts or invoices for their mobile phone expenses and recharge transactions. These receipts typically contain details such as the user's name,user’s ID, contact information, mobile service provider recharge amount, transaction date,Staring and Ending of plan and often a transaction ID or reference number in case of any query.The primary purpose of a Recharge Bill Generator is to offer users a convenient and efficient method to create official-looking receipts for their mobile phone-related expenditures.
+
+
+ANALYSIS-
+                          The purpose of the recharge bill generator is to provide you with receipts for personal records, business reimbursement, or tax purposes, our platform simplifies the process.It's a time-efficient solution that eliminates the need for manual receipt creation. The receipts generated completely with legal requirements and can be used for tax documentation,business expense claims, or personal records. The customization options allow you to tailor the receipt to your specific needs. A recharge receipt serves as proof of payment received by individuals when they recharge or add credit to their prepaid mobile phone accounts; it acts as confirmation of a successful transaction. Recharge receipts contribute to a transparent and accountable recharge process, instilling confidence in customers that their payments are accurately processed and that they are receiving the benefits they have paid for.
+
+IDEATE- 
+                This whole program is to help customer in this online era to recharge his/her appliances in easy mode  so that it is transparent process by which customer can easily track for which plan they provide money for and when the plan will start and end and if necessary they can also add more data for the day and more customisation can also will be allowed. Recharge Receipts serve as evidence of payment for mobile phone services, useful in case of billing disputes or discrepancies.
+
+Build-
+                         
+           #include <stdio.h>
+
+int main() {
+    char subscription_type;
+    char plan_choice;
+    char name[1000];
+    char address[100];
+    char date[50];
+
+    printf("      Welcome to the Recharge Bill Generator\n\n");
+    printf("what is your Name:- ");
+    scanf("%s", &name);
+    printf("enter your Address:- ");
+    scanf("%s", &address);
+    printf("Enter todays Date:- ");
+    scanf("%s", &date);
+    printf("Choose your subscription type:\n");
+    printf("A. Monthly Subscription\n");
+    printf("B. Daily Data\n");
+    printf("Enter A or B: ");
+    scanf(" %c", &subscription_type);
+
+    if (subscription_type == 'A') {
+        printf("\nMonthly Plans:\n");
+        printf("P. 1GB/day(for 28 days) - Rs219\n");
+        printf("Q. 2GB/day (for 1 month) - Rs299\n");
+        printf("R. 2.5GB/day (for 30 days) - Rs319\n");
+        printf("Enter your plan choice (P/Q/R): ");
+        scanf(" %c", &plan_choice);
+
+        if (plan_choice == 'P') {
+            printf("\nYou selected 1GB/day.\nTotal cost: Rs219\n");
+        } else if (plan_choice == 'Q') {
+            printf("\nYou selected 2GB/day.\nTotal cost: Rs299\n");
+        } else if (plan_choice == 'R') {
+            printf("\nYou selected 2.5GB/day.\nTotal cost: Rs319\n");
+        } else {
+            printf("Invalid plan choice.\n");
+        }
+
+    } else if (subscription_type == 'B') {
+        printf("\nDaily Plans(for 24hrs only):\n");
+        printf("P. 1.5GB - Rs19\n");
+        printf("Q. 2.5GB - Rs29\n");
+        printf("R. 5GB - Rs44\n");
+        printf("L. Unlimited - Rs101\n");
+        printf("Enter your plan choice (P/Q/R/L): ");
+        scanf(" %c", &plan_choice);
+
+        if (plan_choice == 'P') {
+            printf("\nYou selected 1.5GB.\nTotal cost: Rs19\n");
+        } else if (plan_choice == 'Q') {
+            printf("\nYou selected 2.5GB.\nTotal cost: Rs29\n");
+        } else if (plan_choice == 'R') {
+            printf("\nYou selected 5GB.\nTotal cost: Rs44\n");
+        } else if (plan_choice == 'L') {
+            printf("\nYou selected Unlimited data.\nTotal cost: Rs101\n");
+        } else {
+            printf("Invalid plan choice.\n");
+        }
+
+    } else {
+        printf("Invalid subscription type.\n");
+    }
+
+    return 0;
+}
+
+TEST-   
+ Welcome to the Recharge Bill Generator
+
+what is your Name:- sarang_nagre
+enter your Address:- shendurjan
+Enter todays Date:- 06/10/2025
+Choose your subscription type:
+A. Monthly Subscription
+B. Daily Data
+Enter A or B: A
+
+Monthly Plans:
+P. 1GB/day(for 28 days) - Rs219
+Q. 2GB/day (for 1 month) - Rs299
+R. 2.5GB/day (for 30 days) - Rs319
+Enter your plan choice (P/Q/R): P
+
+You selected 1GB/day.
+Total cost: Rs219
+
+B)     Welcome to the Recharge Bill Generator
+
+what is your Name:- sarang_nagre
+enter your Address:- shendurjan
+Enter todays Date:- 06/10/2025
+Choose your subscription type:
+A. Monthly Subscription
+B. Daily Data
+Enter A or B: B
+
+Daily Plans(for 24hrs only):
+P. 1.5GB - Rs19
+Q. 2.5GB - Rs29
+R. 5GB - Rs44
+L. Unlimited - Rs101
+Enter your plan choice (P/Q/R/L): P
+
+You selected 1.5GB.
+Total cost: Rs19
+
+IMPLIMENTATION-
+
+
+
+
+             
